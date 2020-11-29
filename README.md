@@ -268,14 +268,32 @@ div.innerHTML = str;
 
 # Vue CLI 
 - Vue CLI는 커맨드라인 인터페이스 명령어 실행 보조 도구. 
-- node -v, npm -v 확인 
-- `sudo npm install -g @vue/cli`
-- `vue create vue-cli`  
-- cd vue-cli
-- npm run serve
+## Vue CLI 설치 
++ node -v, npm -v 확인 
++ `sudo npm install -g @vue/cli`
+## Vue CLI 프로젝트 생성 및 서버 실행 
++ `vue create vue-cli`  
++ cd vue-cli
++ npm run serve
 
 # 싱글 파일 컴포넌트 Xx.vue
 - vue + tab 
+  + ```
+    <template>
+        <!-- HTML -->
+    </template>
+
+    <script>
+    export default {
+        // javascript - 인스턴스 옵션
+    }
+    </script>
+
+    <style>
+    /* CSS */
+    </style>
+    ```
+- 기존 코드를 파일로 분리하면 다음과 같다.     
   + ```
     var appHeader = {
         template: '<div>header</div>', 
@@ -288,13 +306,11 @@ div.innerHTML = str;
     ```
   + ```
     <template>
-        <!-- HTML -->
-        <div>header</div>'
+        <div>header</div>
     </template>
 
     <script>
     export default {
-        // javascript - 인스턴스 옵션
         methods: {
             addNum: function() {
                 
@@ -304,7 +320,6 @@ div.innerHTML = str;
     </script>
 
     <style>
-    /* CSS */
     </style>
     ```
 - template 안에서는 루트 메서드가 하나여야 한다. 
@@ -315,4 +330,12 @@ div.innerHTML = str;
         <div></div>
     </template>
     ```
+  + O
+    ``` 
+    <template>
+        <div>
+            <div></div>
+        </div>
+    </template>
+    ```  
 - 최신 뷰에서는 `data: { num : 10}` 대신 `data: function() { return num: 10 }`로 해야함 
