@@ -124,7 +124,7 @@ div.innerHTML = str;
   + 상위 컴포넌트 -> 하위 컴포넌트 (props 속성)
   + 하위 컴포넌트 -> 상위 컴포넌트 (이벤트 발생)
   + 같은 레벨에서의 컴포넌트 통신 하려면 상위 컴포넌트를 거쳐서 보내야함
-  ![componentSameLevel](./images/component-same-level.PNG)
+  ![componentSameLevel](./images/component-same-level.png)
 ## `props`
   + `<app-header v-bind:하위 프롭스 속성 이름="상위 컴포넌트의 데이터 이름"></app-header>`
   + 상위 컴포넌트(root) -> 하위 컴포넌트(appHeader)로 props
