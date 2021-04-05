@@ -149,7 +149,7 @@ div.innerHTML = str;
         })
     </script>
     ```
-## event emit
+## `event emit`
  + `<app-header v-on:하위 컴포넌트에서 발생한 이벤트 이름="상위 컴포넌트의 메서드 이름"></app-header>`
  + 하위 컴포넌트(root) -> 상위 컴포넌트(appHeader)로 event emit
  + ```
@@ -197,7 +197,7 @@ div.innerHTML = str;
     });
     ```
 
-# 뷰 라우터 
+# `뷰 라우터` 
 - 뷰 라우터는 뷰 라이브러리를 이용해 SPA 구현할 때 사용하는 라이브러리이다. 
 - CDN `<script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>`
 - 생성 
@@ -224,10 +224,10 @@ div.innerHTML = str;
     ```
 - 컴포넌트가 표시되는 영역은 router-view 태그로 설정한다. 뷰 인스턴스에 연결해야 사용할 수 있다  
 - 특정 페이지를 이동할 수 있게 해주는 태그는 router-link 이다. 
-  + `<router-link to="이동할 URL"><</router-link>`
+  + `<router-link to="이동할 URL"></router-link>`
 
-# 액시오스 axios
-- 뷰에서 권고하는 HTTP 통신 라이브러리이다. Promise 기반의 HTTP 통신 라이브러리이고 문서화가 잘 되어있다. 
+# 액시오스 `axios`
+- `뷰에서 권고하는 HTTP 통신 라이브러리이다. Promise 기반의 HTTP 통신 라이브러리이고 문서화가 잘 되어있다.` 
 - CDN `<script src="https://unpkg.com/axios/dist/axios.min.js"></script>`
   + Promise based HTTP client for the browser and node.js 
   + 뷰 리소스 대신 사용. 
