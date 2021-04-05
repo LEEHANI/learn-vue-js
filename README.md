@@ -49,8 +49,8 @@ div.innerHTML = str;
 # instance 뷰 인스턴스 
 - 생성 new Vue();
   + ```
-    var vm = neww Vue();
-    consoloe.log(vm);
+    var vm = new Vue();
+    console.log(vm);
     ```
 - Vue 인스턴스는 다양한 기능(API)과 속성을 제공한다 
 - 생성자 함수를 이용해 Vue 인스턴스에 함수를 새로 정의하면 재사용성이 높아진다 
